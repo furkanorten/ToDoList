@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/009ef106ed.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" class="css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-title"> To Do List</h1>
+    </header>
+
+    <form class='task-form' action="#">
+        <input type="text" class="form-item input-task" placeholder="Enter a task">
+        <button class="form-item btn-add-task" type="submit">
+            <i class="fa-solid fa-circle-plus"></i>
+        </button>
+    </form>
+
+    <div class="task-container">
+        <ul class="task-list">
+        </ul>
+    </div>
+    <script src="to_do_list.js"></script>
+</body>
+</html>

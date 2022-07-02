@@ -1,0 +1,95 @@
+:root {
+    --main-color:green;
+    --main-color-light:rgb(0, 81, 255);
+    --accent-color:rgb(255, 0, 0);
+    --accent-color-light:rgba(255, 0, 0, 0.5)
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image:linear-gradient(to right, var(--main-color), var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-title {
+    font-size: 3rem;
+    color:white
+}
+
+.header, .task-form {
+    min-height: 20vh;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item {
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.btn-add-task {
+    color:blue;
+    cursor: pointer;
+}
+
+.btn-add-task:hover {
+    color:white;
+    background-color: blue;
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list {
+    list-style: none;
+    min-width: 40%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .1rem;
+    background-color: white;
+    transition: .5s ease-in-out;
+    font-size: 1.5rem;
+}
+
+.task-desc {
+    flex: 1;
+    padding: .5rem;
+}
+
+.task-btn {
+    background-color: var(--accent-color);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}
+
+.task-btn-completed {
+    background-color: green;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-solid {
+    pointer-events: none;
+}
+
+.disappear {
+    transform: scale(0);
+}
